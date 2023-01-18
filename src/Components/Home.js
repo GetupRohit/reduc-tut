@@ -1,25 +1,23 @@
 import React from "react";
+import "./Home.css";
 
 function Home(props) {
   return (
-    <div>
+    <div className="Container">
       <h1>Home Component</h1>
-      <div className="cart-wrapper">
-        <div className="img-wrapper item">
-          <img src="./iphone.jpeg" alt="i Phone" />
+      <div className="mainCartDiv">
+        <div className="imgDiv">
+          <img
+            src="https://m.media-amazon.com/images/I/61l9ppRIiqL._SX679_.jpg"
+            alt="img"
+          />
         </div>
-        <div className="text-wrapper item">
-          <span>I-Phone</span>
-          <span>Price: $1000.00</span>
+        <div className="ForPriceAndName">
+          <div className="name">I Phone 13</div>
+          <div className="price">130000</div>
         </div>
-        <div className="btn-wrapper item">
-          <button
-            onClick={() => {
-              props.addToCartHandler({ pice: 1000, name: "i phone 11" });
-            }}
-          >
-            Add To Cart
-          </button>
+        <div className="btn">
+          <button className="button">Add To Cart</button>
         </div>
       </div>
     </div>
